@@ -1,6 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { fetchContacts, addContact, deleteContact } from './contactsOperations';
-
 const initialContacts = {
   contacts: {
     items: [],
@@ -61,7 +60,6 @@ const contactsSlice = createSlice({
       });
   },
 });
-
 export const filterSlice = createSlice({
   name: 'filter',
   initialState: initialContacts.filter,
